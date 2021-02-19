@@ -125,7 +125,7 @@ console.log(`Ready ;)`)
 
 
 client.on('message', msg => {
-  if(msg.content === '-invite') {
+  if(msg.content === 'rr!invite') {
       let embed = new Discord.MessageEmbed()
       .setTitle('Invite Me!')
       .setURL('https://discord.com/api/oauth2/authorize?client_id=809757376138838027&permissions=8&scope=bot')
