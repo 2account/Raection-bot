@@ -120,7 +120,7 @@ fs.readdir("./events/", (err, files) => {
 
 client.on("ready", () => {
 console.log(`Ready ;)`)
-   client.user.setActivity('-rr', {type: "WATCHING" })
+   client.user.setActivity('rr!help', {type: "WATCHING" })
 });
 
 
@@ -129,7 +129,7 @@ client.on('message', msg => {
       let embed = new Discord.MessageEmbed()
       .setTitle('Invite Me!')
       .setURL('https://discord.com/api/oauth2/authorize?client_id=809757376138838027&permissions=8&scope=bot')
-      .setColor('RANDOM')
+      .setColor('RED')
       .setDescription('Invite me to your server today!!')
       .addField(`Bot Invite!`, `[Click Here To invite Me!](https://discord.com/api/oauth2/authorize?client_id=809757376138838027&permissions=8&scope=bot)`)
       .setTimestamp()
@@ -147,6 +147,7 @@ client.on('message', msg => {
         .addFields(
             {name: '```-rr (YOUR_ROLE) (YOUR_EMOJI)  (YOUR_DESCRIPTION "You can skip this, Use --skip") #(Channel)```', value: 'Create Reaction Roles', inline:  false},
             {name: '```-reactionrole (YOUR_ROLE) (YOUR_EMOJI)  (YOUR_DESCRIPTION "You can skip this, Use --skip") #(Channel)```', value: 'Create Reaction Roles', inline:  false},
+           {name: '```rr!invite```', value: 'Invite Me! ❤', inline:  false},
         )
         .setTimestamp()
         msg.channel.send(embed)
