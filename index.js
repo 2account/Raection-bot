@@ -138,4 +138,19 @@ client.on('message', msg => {
 });
 
 
+client.on('message', msg => {
+    if(msg.content === 'rr!help') {
+        let embed = new Discord.MessageEmbed()
+        .setTitle('Command List. 📩')
+        .setColor('BLUE')
+        .setDescription('Support server: https://discord.gg/b4j5K6ZnJ4')
+        .addFields(
+            {name: '```-rr (YOUR_ROLE) (YOUR_EMOJI)  (YOUR_DESCRIPTION "You can skip this, Use --skip") #(Channel)```', value: 'Create Reaction Roles', inline:  false},
+            {name: '```-reactionrole (YOUR_ROLE) (YOUR_EMOJI)  (YOUR_DESCRIPTION "You can skip this, Use --skip") #(Channel)```', value: 'Create Reaction Roles', inline:  false},
+        )
+        .setTimestamp()
+        msg.channel.send(embed)
+    }
+});
+
 client.login(process.env.token)
