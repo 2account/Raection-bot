@@ -131,7 +131,7 @@ client.on('message', msg => {
       .setURL('https://discord.com/api/oauth2/authorize?client_id=809757376138838027&permissions=8&scope=bot')
       .setColor('RANDOM')
       .setDescription('Invite me to your server today!!')
-      .addField(`Bot Invite!`, `[Click Here To invite Me!](https://discord.com/api/oauth2/authorize?client_id=809757376138838027&permissions=8&scope=bo=)`)
+      .addField(`Bot Invite!`, `[Click Here To invite Me!](https://discord.com/api/oauth2/authorize?client_id=809757376138838027&permissions=8&scope=bot)`)
       .setTimestamp()
       .setFooter('Dette er en footer!')
       msg.channel.send(embed)
