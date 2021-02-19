@@ -120,7 +120,8 @@ fs.readdir("./events/", (err, files) => {
 
 client.on("ready", () => {
 console.log(`Ready ;)`)
-})
+   client.user.setActivity('-rr', {type: "WATCHING" })
+});
 
 
 client.on('message', msg => {
